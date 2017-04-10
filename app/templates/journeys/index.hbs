@@ -1,0 +1,13 @@
+{{#journey-filter
+	filter=(action 'filterByCountry')
+	as |journeys|}}
+	<div class="section">
+		<div>
+			<ul class="grid ul.grid.columns-3">
+					{{#each journeys as |journeyListing|}}
+						<li>{{journey-listing journey=journeyListing}}</li>
+					{{/each}}
+			</ul>
+		</div>
+	</div>
+{{/journey-filter}}
