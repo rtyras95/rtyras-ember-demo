@@ -1,8 +1,5 @@
-<div class="filter">
-	<span class="fa fa-search"></span>
-	{{input value=value
-	        key-up=(action 'handleFilterEntry')
-	        class="textbox"
-	        placeholder="Filter By Country"}}
-	{{yield results}}
-</div>
+{{input value=value
+        key-up=(action 'handleFilterEntry')
+        class="filter"
+        placeholder="Filter By Country"}}
+{{yield results}}

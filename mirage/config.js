@@ -121,7 +121,7 @@ let journeys = [{
  this.get('/photos', function(db, request) {
     if(request.queryParams.journeyId !== undefined) {
       let filteredPhotos = photos.filter(function(i) {
-        return i.attributes.journeyId.indexOf(request.queryParams.journeyId) !== -1;
+        return i.attributes.journeyId === request.queryParams.journeyId;
       });
       return { data: filteredPhotos };
     } else {

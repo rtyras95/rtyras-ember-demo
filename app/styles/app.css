@@ -4,7 +4,10 @@
   2. About Me
   3. Journeys
   4. Contact
+  5. Common Themes
 */
+
+/*Background and Body*/
 
 body {
   margin: 50px;
@@ -44,6 +47,7 @@ body {
   padding: 30px;
   position: relative;
   top: 0px;
+  overflow-y: auto;
 }
 
 .button {
@@ -63,7 +67,12 @@ body {
   font-weight: bold;
 }
 
-.button .button-square:hover {
+.button:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.button-square:hover {
   color: white;
   cursor: pointer;
 }
@@ -71,11 +80,6 @@ body {
 .button:focus {
   outline: none;
   border: 1px white;
-}
-
-.show-grad {
-  width:100%;
-  padding: 50px;
 }
 
 .filter { 
@@ -93,16 +97,17 @@ body {
   font-size: 15px;
 }
 
-.textbox {
+.filter {
   margin-top: 15px;
   height: 50px;
   width: 100%;
   border-radius: 15px;
   border: 1px black;
   color: black;
+  padding-left: 15px;
 }
 
-.textbox:focus {
+.filter:focus {
   outline: none;
 }
 
@@ -110,6 +115,7 @@ ul.grid {
   list-style: none;
   font-size: 0px;
   padding: 0px;
+  text-align: center;
 }
 
 ul.grid li {
@@ -125,6 +131,8 @@ ul.grid li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   margin: 5px;
+  height: 100%;
+  text-align: left;
 }
 
 ul.grid li img {
@@ -168,5 +176,9 @@ ul.grid.columns-4 li {
     width: 100% !important; 
     margin: 0 0 20px;
   }
+}
+
+ul.contact {
+  list-style:none;
 }
 
